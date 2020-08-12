@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div className='split left'>
+        <div className='centered'>
+          <h6>Hi, I'm Sujan Pandey</h6>
+          <h4>Calculator Made Using React</h4>
+        </div>
+      </div>
+
+
+      <div className='split right'>
+        <div className='centered'>
+          <div className='display-box'>
+            <div className='calculation-box'>
+              1+3
+            </div>
+
+            <div className='output-box'>
+              4
+            </div>
+          </div>
+
+        </div>
+      </div >
     </div>
   );
 }
